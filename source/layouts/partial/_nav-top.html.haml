@@ -1,0 +1,14 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "#"} Project name
+      .nav-collapse
+        %ul.nav
+          = nav_active(page_classes,"index", "Home")
+          = nav_active(page_classes,"blog", "Blog")
+          = nav_active(page_classes,"portfolio", "Portfolio")
+
