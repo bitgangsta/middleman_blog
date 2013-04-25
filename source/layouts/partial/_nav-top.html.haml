@@ -1,14 +1,14 @@
-.navbar.navbar-fixed-top
+.navbar.navbar-fixed-top.navbar-inverse
   .navbar-inner
     .container
       %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        /nav icon for menu on small displays
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.brand{:href => "#"} Project name
+      %a.brand{:href => "/"} Zive.me
       .nav-collapse
         %ul.nav
-          = nav_active(page_classes,"index", "Home")
+          / = nav_active(page_classes,"index", "Home")
           = nav_active(page_classes,"blog", "Blog")
           = nav_active(page_classes,"portfolio", "Portfolio")
-

@@ -7,7 +7,7 @@ activate :blog do |blog|
   # blog.permalink = ":year/:month/:day/:title.html"
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
-  blog.layout = "layout"
+  blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = ":year.html"
@@ -18,6 +18,7 @@ activate :blog do |blog|
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
 end
+page "/blog/*", :layout => "blog"
 
 page "blog/feed.xml", :layout => false
 
@@ -33,6 +34,8 @@ helpers do
       if current_page == page_link then css_class = "active" else css_class = "" end
       if page_link == "index"
         page_link = "/"
+      else
+        page_link = "/" + page_link
       end
       content_tag(:li, link_to(title, page_link), :class => css_class)
   end
@@ -66,9 +69,6 @@ end
 # with_layout :admin do
 #   page "/admin/*"
 # end
-with_layout :blog_layout do
-  page "/blog/*"
-end
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
 #   @which_fake_page = "Rendering a fake page with a variable"

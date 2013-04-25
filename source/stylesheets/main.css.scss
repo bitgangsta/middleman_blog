@@ -1,0 +1,24 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+.nav_content_unhide{
+    height: 50px;
+}
+body{
+    background-image: url("/img/wavegrid.png");
+    color:rgb(0,0,0);
+    text-shadow: rgb(255,255,255) 0 .5px .1px;
+}
+.hero-unit{
+    background-image: url("/img/blackorchid.png");
+    color:rgb(255,255,255);
+}
+.blog_snip img{
+    max-height: 200px;
+    float:left;
+    margin: 5px;
+    border-radius: 4px;
+}
+.clear{
+    clear: both;
+}

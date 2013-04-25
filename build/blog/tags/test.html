@@ -1,56 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <meta charset='utf-8'>
-    <meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible'>
-    <link href="/stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/bootstrap.js" type="text/javascript"></script>
+    <title>My site</title>
+    <meta content='' name='description'>
+    <meta content='' name='author'>
+    <meta content='width=device-width' initial-scale='1.0' name='viewport'>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le styles -->
+    <link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Le fav and touch icons -->
+    <link href='images/favicon.ico' rel='shortcut icon'>
+    <link href='images/apple-touch-icon.png' rel='apple-touch-icon'>
+    <link href='images/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='images/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
   </head>
-  <body>
-    <div class='container'>
-      <div id='main' role='main'>
-        <h1>Articles tagged 'test'</h1>
-        
-          
-            <li><a href="/blog/2012/02/02/example-article-2.html">Example Article 2</a> <time>Feb  2</time></li>
-      </div>
-      <aside>
-        <h2>Recent Articles</h2>
-        <ol>
-          <li>
-            <a href='/blog/2012/02/02/example-article-2.html'>Example Article 2</a>
-            <span>Feb  2</span>
-          </li>
-          <li>
-            <a href='/blog/2012/01/01/example-article.html'>Example Article</a>
-            <span>Jan  1</span>
-          </li>
-        </ol>
-        <h2>Tags</h2>
-        <ol>
-          <li>
-            <a href='/blog/tags/example.html'>
-              example
-              (1)
-            </a>
-          </li>
-          <li>
-            <a href='/blog/tags/test.html'>
-              test
-              (1)
-            </a>
-          </li>
-        </ol>
-        <h2>By Year</h2>
-        <ol>
-          <li>
-            <a href='/blog/2012.html'>
-              2012
-              (2)
-            </a>
-          </li>
-        </ol>
-      </aside>
-    </div>
-  </body>
+  <body></body>
 </html>
+<div class='navbar navbar-fixed-top'>
+  <div class='navbar-inner'>
+    <div class='container'>
+      <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'></a>
+      <a class='brand' href='/'>Project name</a>
+      <div class='nav-collapse'>
+        <ul class='nav'>
+          <!-- = nav_active(page_classes,"index", "Home") -->
+          <li class="active"><a href="/blog">Blog</a></li>
+          <li class=""><a href="/portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='container'>
+  <div class='push'></div>
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <h1>Articles tagged 'test'</h1>
+  
+    
+      <li><a href="/blog/2012/02/02/example-article-2.html">Example Article 2</a> <time>Feb  2</time></li>
+  <hr>
+  <footer>
+    <p></p>
+    &copy; Dustin Zeisler
+    2013
+  </footer>
+  <script src="/javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="/javascripts/bootstrap.js" type="text/javascript"></script>
+</div>

@@ -1,0 +1,11 @@
+= partial "layouts/partial/header"
+= partial "layouts/partial/nav-top"
+.container
+  .nav_content_unhide
+  .row
+    .span2
+    .span8
+      = yield
+    .span2
+  = partial "layouts/partial/footer"
+
