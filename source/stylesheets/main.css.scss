@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+
+
 .nav_content_unhide{
     height: 50px;
 }
@@ -10,9 +12,32 @@ body{
     text-shadow: rgb(255,255,255) 0 .5px .1px;
 }
 .hero-unit{
-    background-image: url("/img/blackorchid.png");
+    background-image: url("/img/stressed_linen.png");
     color:rgb(255,255,255);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding-bottom: 40px;
+    padding-top: 50px;
+
+    min-height: 190px;
+    img{
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        float:left;
+        margin:20px;
+
+    }
 }
+article{
+    padding:10px;
+}
+h3{
+    margin-left:10px;
+    border-bottom: white solid 1px;
+}
+
 .blog_snip img{
     max-height: 200px;
     float:left;
@@ -22,3 +47,77 @@ body{
 .clear{
     clear: both;
 }
+[class^="icon-"], [class*=" icon-"] {
+    vertical-align: middle;
+}
+@media (max-width: 979px){
+    .navbar-fixed-top {
+        margin-bottom: 0;
+    }
+    .hero-unit{
+        max-height: 100px;
+        padding:5px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        text-align: middle;
+        h1{
+            font-size:250%;
+        }
+        .intro{
+            padding: 10px;
+            text-align: middle;
+            float: right;
+            margin: 30px;
+        }
+        img{
+
+            float: left;
+        }
+    }
+}
+@media (max-width: 767px){
+    body {
+        font-size: 18px;
+        line-height: 1.5em;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .hero-unit{
+        min-height: 130px;
+        margin: 0;
+        padding:1px;
+        h1{
+            text-align: middle;
+            font-size:1.6em;
+            padding-top: 10%;
+        }
+        .intro{
+            padding: 0px;
+            text-align: middle;
+            float:none;
+            margin: 0;
+        }
+        img{
+            max-width: 30%;
+            margin: 15px;
+            // clear:both;
+        }
+    }
+    .blog_snip {
+    padding: 10px;
+        img{
+            max-width: 90%;
+        }
+    }
+    .navbar .brand {
+        margin-left:15px;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+

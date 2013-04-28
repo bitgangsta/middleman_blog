@@ -1,0 +1,12 @@
+%h3
+    %i.icon-chevron-right
+    Recent Blog Posts
+- blog.articles[0...3].each do |article|
+    .span4.blog_snip
+        %h2
+            %a{href: article.url}
+                = article.title
+        %span= article.date.strftime('%b %e')
+        %p= article.summary
+        .clear
+        %a.btn{href: article.url} View details &raquo;

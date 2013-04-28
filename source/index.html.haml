@@ -1,18 +1,11 @@
 ---
-title: Dustin's Site
+title: Zive.me | Dustin Zeisler
 ---
 .hero-unit
-    %h1 Dustin's Site
-    %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-    %p
-        %a.btn.btn-primary.btn-large Learn more &raquo;
-.row
-    - blog.articles[0...2].each do |article|
-        .span4.blog_snip
-            %h2
-                %a{:href => article.url}= article.title
-            %span= article.date.strftime('%b %e')
-            %p= article.summary
-            .clear
-            %a.btn{:href => article.url} View details &raquo;
-
+    = image_tag 'me.jpg'
+    .intro
+        %h1 Dustin Zeisler
+        %p.hidden-phone This my blog for personal stuff, family, programming, etc.
+.container
+    .row
+        = partial "blog/summary"

@@ -1,24 +1,36 @@
 ---
 title: Dustin's Portfolio
 ---
-.hero-unit
-    %h1 Dustin's Portfolio
-    %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-    %p
-        %a.btn.btn-primary.btn-large Learn more &raquo;
+=javascript_include_tag "jquery.min"
+%script{:type=>"text/javascript"}
+  $(document).ready(function(){
+  $('.carousel').carousel();
+  });
 .row
-    .span4
-        %h2 Heading
-        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        %p
-        %a.btn{:href => "#"} View details &raquo;
-    .span4
-        %h2 Heading
-        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        %p
-        %a.btn{:href => "#"} View details &raquo;
-    .span4
-        %h2 Heading
-        %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        %p
-        %a.btn{:href => "#"} View details &raquo;
+  / Carousel - consult the Twitter Bootstrap docs at
+  / http://twitter.github.com/bootstrap/javascript.html#carousel
+  .span2
+  .span8
+    #this-carousel-id.carousel.slide
+      / class of slide for animation
+      .carousel-inner
+        .item.active
+          / class of active since it's the first item
+          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
+          .carousel-caption
+            %p Caption text here
+        .item
+          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
+          .carousel-caption
+            %p Caption text here
+        .item
+          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
+          .carousel-caption
+            %p Caption text here
+        .item
+          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
+          .carousel-caption
+            %p Caption text here
+      %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
+      %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
+  .span2

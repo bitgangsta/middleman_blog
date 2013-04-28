@@ -40,6 +40,7 @@ helpers do
       content_tag(:li, link_to(title, page_link), :class => css_class)
   end
 end
+
 ###
 # Compass
 ###
@@ -49,10 +50,11 @@ end
 # require 'susy'
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
+compass_config do |config|
+  config.output_style = :expanded
+  config.sass_options = {debug_info: true}
+end
+activate :livereload
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -92,7 +94,7 @@ set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :images_dir, 'img'
 
 # Build-specific configuration
 configure :build do
