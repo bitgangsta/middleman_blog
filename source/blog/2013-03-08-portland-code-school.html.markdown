@@ -4,7 +4,9 @@ date: 2013-03-8
 tags: rails
 layout: article_layout
 ---
-![Portland Code School Logo](/img/blog/pcs-logo.png)
+<div class="crop_lan">
+<img src="/img/blog/pcs-logo.png" class="crop_lan">
+</div>
 
 I’ve been watching the rise of Dev Boot camps around the country, they offer a fast pace approach to learning Web Development with a focus on mentorship and networking with Employers. The problem has been these programs have been offered in San Francisco, New York, and other bigger cities. 6 week, as most of them are, is a long time to get the time off and even harder if I have to find some place to live in a expensive city, like San Francisco. Then <a href="http://portlandcodeschool.com">Portland Code School </a> popped in my radar, its local, I don’t have to move anywhere and I can make connections with employers in the place I want to work, Portland. I had the chance to meet Chuck Vose the founder of the school at the Ruby Newbie event. He was very approachable and willing to help me with my questions I had with the first rails app I was building, <a href="https://github.com/ghzeisler/Timer">Timer</a>.
 

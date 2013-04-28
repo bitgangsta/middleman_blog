@@ -6,31 +6,31 @@ title: Dustin's Portfolio
   $(document).ready(function(){
   $('.carousel').carousel();
   });
-.row
-  / Carousel - consult the Twitter Bootstrap docs at
-  / http://twitter.github.com/bootstrap/javascript.html#carousel
-  .span2
-  .span8
-    #this-carousel-id.carousel.slide
-      / class of slide for animation
-      .carousel-inner
-        .item.active
-          / class of active since it's the first item
-          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
-          .carousel-caption
-            %p Caption text here
-        .item
-          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
-          .carousel-caption
-            %p Caption text here
-        .item
-          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
-          .carousel-caption
-            %p Caption text here
-        .item
-          %img{:alt => "", :src => "http://placehold.it/1200x480"}/
-          .carousel-caption
-            %p Caption text here
-      %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
-      %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
-  .span2
+.container
+  .row
+    .span1
+    .span10
+      #this-carousel-id.carousel.slide
+        .carousel-inner
+          .item.active
+            %img{:alt => "", :src => "/img/portfolio/resume.png"}
+            .carousel-caption
+              %p
+                Resume -
+                %a{href: "/portfolio/resume.pdf"}
+                  PDF
+          .item
+            %img{:alt => "", :src => "/img/portfolio/github.png"}/
+            .carousel-caption
+              %p
+                %a{href: "https://github.com/ghzeisler"}
+                  Github
+          .item
+            %img{:alt => "", :src => "/img/portfolio/northtech.jpg"}/
+            .carousel-caption
+              %p
+                %a{href: "http://http://northtechdefense.com/"}
+                  Northtech Defence
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
+    .span1
