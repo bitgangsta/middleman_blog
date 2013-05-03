@@ -2,12 +2,8 @@
 = partial "layouts/partial/nav-top"
 .nav_content_unhide.visible-desktop
 .container
-  .row
-    .span2
-    .span8
-      %article
+    %article
         %h1
-          = current_page.data.title
+            = current_page.data.title
         = yield
-    .span2
-  = partial "layouts/partial/footer"
+= partial "layouts/partial/footer"

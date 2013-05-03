@@ -1,11 +1,8 @@
+$navbarCollapseWidth: 480px;
 @import "bootstrap";
+body { padding-top: 40px; }
 @import "bootstrap-responsive";
 
-
-
-.nav_content_unhide{
-    height: 50px;
-}
 body{
     background-image: url("/img/wavegrid.png");
     color:rgb(0,0,0);
@@ -17,9 +14,9 @@ body{
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    @include box-shadow(0 0 2em rgb(78, 78, 78));
     padding-bottom: 40px;
     padding-top: 50px;
-
     min-height: 190px;
     img{
         -webkit-border-radius: 10px;
@@ -27,44 +24,28 @@ body{
         border-radius: 10px;
         float:left;
         margin:20px;
+        @include box-shadow(0 0 1.5em rgb(88, 88, 88));
 
     }
 }
-article{
-    padding:10px;
-}
+
+    article{
+        @include container-fixed();
+        padding: 10px;
+    }
+    article.summary{
+        @include makeColumn(4, 1);
+        h3{font-size: 18px;}
+        img{
+            @include size(0,0);
+        }
+    }
+
 h3{
     margin-left:10px;
     border-bottom: white solid 1px;
 }
 
-.blog_snip img{
-    max-height: 200px;
-    float:left;
-    margin: 5px;
-    border-radius: 4px;
-}
-.clear{
-    clear: both;
-}
-article.summary{
-    .crop_port{
-        overflow: hidden;
-        max-height: 150px;
-    }
-    img.crop_port{
-        // margin:0 -10% -40% 0;
-        float: left;
-    }
-    .crop_lan{
-        overflow: hidden;
-        max-width: 300px;
-    }
-    img.crop_lan{
-        margin:0 -100px -0% 0;
-        float: left;
-    }
-}
 [class^="icon-"], [class*=" icon-"] {
     vertical-align: middle;
 }
@@ -79,6 +60,11 @@ article.summary{
 li{
     list-style-type: none;
 }
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
 img.effect {
 -webkit-transform: rotate(-2deg);
 -moz-transform: rotate(-2deg);
@@ -89,6 +75,9 @@ img.effect {
 max-width: 95% !important;
 margin-left: .5em;
 margin-right: .5em;
+}
+.carousel img {
+    max-width: 100%;
 }
 @media (max-width: 979px){
     .navbar-fixed-top {
@@ -106,7 +95,6 @@ margin-right: .5em;
         .intro{
             padding: 10px;
             text-align: middle;
-            float: right;
             margin: 30px;
         }
         img{
@@ -114,49 +102,82 @@ margin-right: .5em;
             float: left;
         }
     }
+    .carousel img {
+        height: auto;
+        width: 100%;
+    }
 }
 @media (max-width: 767px){
+    img{
+        width: 150px;
+        max-width: 300px;
+    }
+    .hero-unit {
+
+        h1 {
+            font-size: 250%;
+        }
+        padding:10px;
+        padding-top:40px;
+    }
     body {
-        font-size: 18px;
-        line-height: 1.5em;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        margin: 0;
+        padding:0;
     }
-    .hero-unit{
-        min-height: 130px;
-        margin: 0;
-        padding:1px;
-        h1{
-            text-align: middle;
-            font-size:1.6em;
-            padding-top: 10%;
-        }
-        .intro{
-            padding: 0px;
-            text-align: middle;
-            float:none;
-            margin: 0;
-        }
-        img{
-            max-width: 30%;
-            margin: 15px;
-            // clear:both;
-        }
+    .navbar-fixed-top {
+        margin-bottom: 20px;
+
     }
-    .blog_snip {
-    padding: 10px;
-        img{
-            max-width: 90%;
-        }
-    }
-    .navbar .brand {
-        margin-left:15px;
+    min-height: 200px;
+    max-height: none;
+    .hero-unit .intro {
+        padding: 10px;
+        margin: 0px;
     }
     .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-left: 0;
+        margin-right: 0;
+        position: static;
+    }
+    .navbar .brand {
         margin-left: 0px;
-        margin-right: 0px;
+    }
+     .carousel img {
+        height: auto;
+        width: 100%;
+    }
+
+}
+@media (max-width: $navbarCollapseWidth){
+    img{
+        width: 150px;
+        max-width: 300px;
+    }
+    .hero-unit {
+        h1 {
+            font-size: 150%;
+        }
+    padding:10px;
+    }
+    body {
+        padding:0;
+    }
+    .navbar-fixed-top {
+        margin-bottom: 0;
+
+    }
+    min-height: 200px;
+    max-height: none;
+    .hero-unit .intro {
+        padding: 10px;
+        margin: 0px;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .carousel img {
+        height: auto;
+        width: 100%;
     }
 
 }

@@ -1,12 +1,11 @@
 %ul
     - blog.articles[0...10].each do |article|
         %li
-
-            %article.summary
+            %article
                 %h2
                     %i.icon-chevron-right
                     %a{:href => article.url}= article.title
-                    %span= article.date.strftime('%b %e')
+                %span= article.date.strftime('%b %e, %Y')
                 %p= article.summary
                 %hr/
 

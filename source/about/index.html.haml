@@ -7,24 +7,21 @@ title: Zive.me | About
   $('.carousel').carousel();
   });
 .container
-  .row
-    .span1
-    .span10
-      #this-carousel-id.carousel.slide
-        .carousel-inner
-          .item.active
-            = image_tag "about/wife_me.jpg"
-            .carousel-caption
-              %p My Beautiful Wife who is a wonderful acrylic artist and crocheter.
-          .item
-            = image_tag "about/family.jpg"
-            .carousel-caption
-              %p Naomi Zeisler my daughter born December 2011.
-          .item
-            = image_tag "about/lava.jpg"
-            .carousel-caption
-              %p My trip in 2008 to Guatemala when I climbed Volcan Pacaya and where I came several feet from active lava flow!
-        %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
-        %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
-    .span1
+  #this-carousel-id.carousel.slide
+    .carousel-inner
+      .item.active
+        = image_tag "about/wife_me.jpg"
+        .carousel-caption
+          %p My Beautiful Wife who is a wonderful acrylic artist and crocheter.
+      .item
+        = image_tag "about/family.jpg"
+        .carousel-caption
+          %p Naomi Zeisler my daughter born December 2011.
+      .item
+        = image_tag "about/lava.jpg"
+        .carousel-caption
+          %p My trip in 2008 to Guatemala when I climbed Volcan Pacaya and where I came several feet from active lava flow!
+    %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
+    %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
+
 

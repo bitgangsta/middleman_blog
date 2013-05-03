@@ -7,30 +7,27 @@ title: Dustin's Portfolio
   $('.carousel').carousel();
   });
 .container
-  .row
-    .span1
-    .span10
-      #this-carousel-id.carousel.slide
-        .carousel-inner
-          .item.active
-            %img{:alt => "", :src => "/img/portfolio/resume.png"}
-            .carousel-caption
-              %p
-                Resume -
-                %a{href: "/portfolio/resume.pdf"}
-                  PDF
-          .item
-            %img{:alt => "", :src => "/img/portfolio/github.png"}/
-            .carousel-caption
-              %p
-                %a{href: "https://github.com/ghzeisler"}
-                  Github
-          .item
-            %img{:alt => "", :src => "/img/portfolio/northtech.jpg"}/
-            .carousel-caption
-              %p
-                %a{href: "http://http://northtechdefense.com/"}
-                  Northtech Defence
-        %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
-        %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
-    .span1
+  #this-carousel-id.carousel.slide
+    .carousel-inner
+      .item.active
+        %img{:alt => "", :src => "/img/portfolio/resume.png"}
+        .carousel-caption
+          %p
+            Resume -
+            %a{href: "/portfolio/resume.pdf"}
+              PDF
+      .item
+        %img{:alt => "", :src => "/img/portfolio/github.png"}/
+        .carousel-caption
+          %p
+            %a{href: "https://github.com/ghzeisler"}
+              Github
+      .item
+        %img{:alt => "", :src => "/img/portfolio/northtech.jpg"}/
+        .carousel-caption
+          %p
+            %a{href: "http://http://northtechdefense.com/"}
+              Northtech Defence
+    %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
+    %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
+

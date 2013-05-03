@@ -1,11 +1,10 @@
 = partial "layouts/partial/header"
 = partial "layouts/partial/nav-top"
 .container
-  .nav_content_unhide.visible-desktop
-  .row
-    .span2
-    .span8
-      = yield
-    .span2
-  = partial "layouts/partial/footer"
+    .row
+        %aside.span4.hidden-phone
+            = partial "blog/list_posts"
+        .span8
+            = yield
+= partial "layouts/partial/footer"
 
