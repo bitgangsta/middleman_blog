@@ -1,7 +1,7 @@
 ###
 # Blog settings
 ###
-
+require "middleman-smusher"
 activate :blog do |blog|
   blog.prefix = "blog"
   # blog.permalink = ":year/:month/:day/:title.html"
@@ -40,7 +40,7 @@ helpers do
       content_tag(:li, link_to(title, page_link), :class => css_class)
   end
 end
-
+ignore 'javascripts/bootstrap/*'
 ###
 # Compass
 ###
@@ -99,10 +99,11 @@ set :images_dir, 'img'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+  activate :minify_html
 
   # Enable cache buster
   # activate :cache_buster
@@ -113,7 +114,7 @@ configure :build do
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
-  # activate :smusher
+  activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"

@@ -7,4 +7,6 @@ gem 'sprockets', '~> 2.0'
 gem "sass"
 gem "compass"
 gem "middleman-livereload"
+gem "middleman-minify-html"
+gem "middleman-smusher"
 

@@ -1,3 +1,4 @@
-//= require jquery.min
-//= require bootstrap
+//= require bootstrap/jquery.min
+//= require bootstrap/bootstrap
+
 
