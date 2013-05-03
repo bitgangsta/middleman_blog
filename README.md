@@ -7,7 +7,7 @@ To get a copy of this site do the following:
     git clone https://github.com/ghzeisler/middleman_blog.git mysite
     cd mysite
     bundle
-
+See Live [Demo]
 Read the (beta) Middleman documentation [here][middleman-doc].
 
 [Demo]: http://zive.me
