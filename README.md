@@ -1,13 +1,14 @@
 # Middleman sample
 
-This is a [middleman][middleman] base site, using [haml][haml] and [twitter-bootstrap][twitter-bootstrap].
+This is a [middleman][middleman] base site, using [haml][haml], [SASS][SASS] and [twitter-bootstrap][twitter-bootstrap].
 
 To get a copy of this site do the following:
 
-    git clone git://github.com/virtusweb/middleman-sample.git mysite
+    git clone https://github.com/ghzeisler/middleman_blog.git mysite
     cd mysite
     bundle
 
+See it Live [Demo]: http://zive.me
 Read the (beta) Middleman documentation [here][middleman-doc].
 
 [middleman]: https://github.com/middleman/middleman
